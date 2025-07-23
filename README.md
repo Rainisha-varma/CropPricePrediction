@@ -27,14 +27,14 @@ The dataset contains:
 Data preprocessing steps include:
 
 - Encoding categorical variables (Commodity and Month)
-- Applying log transformation to stabilize variance
-- Standardizing features using Z-score normalization
+- Z-score normalization to scale features
+- Capping outliers based on standard deviation thresholds
 
 ## Approach
 
 The modeling process included the following:
 
-1. **Data Preprocessing**: Handling categorical variables and feature scaling
+1. **Data Preprocessing**: Encoding categorical variables, applying Z-score normalization, and capping extreme outliers
 2. **Modeling**: Two models were trained and compared:
    - **Linear Regression** (baseline)
    - **Support Vector Regression (SVR)**  
